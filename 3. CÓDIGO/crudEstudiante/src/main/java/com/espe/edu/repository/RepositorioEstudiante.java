@@ -18,9 +18,7 @@ public class RepositorioEstudiante {
      * Constructor: carga datos iniciales de ejemplo.
      */
     public RepositorioEstudiante() {
-        lista.add(new Estudiante("22211111220", "Jorge",  24));
-        lista.add(new Estudiante("22211111221", "Ivan",   23));
-        lista.add(new Estudiante("22211111222", "Miguel", 30));
+        
     }
 
     /** Verifica si ya existe un estudiante con el ID dado. */

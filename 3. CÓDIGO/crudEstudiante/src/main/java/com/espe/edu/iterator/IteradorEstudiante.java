@@ -16,7 +16,6 @@ import java.util.List;
 public class IteradorEstudiante implements IIterador<Estudiante> {
 
     private final List<Estudiante> lista;
-    // Puntero interno que avanza con cada llamada a siguiente()
     private int posicion = 0;
 
     /**
@@ -26,13 +25,11 @@ public class IteradorEstudiante implements IIterador<Estudiante> {
         this.lista = lista;
     }
 
-    /** Retorna true mientras el puntero no haya llegado al final. */
     @Override
     public boolean tieneSiguiente() {
         return posicion < lista.size();
     }
 
-    /** Retorna el estudiante en la posición actual y avanza el puntero. */
     @Override
     public Estudiante siguiente() {
         return lista.get(posicion++);
